@@ -5,7 +5,7 @@ from search import linear＿search, sentinel_linear_search, binary_search
 from sort import bubble_sort, quick_sort, randomized_quick_sort, insertion_sort, merge_sort
 
 
-A = np.random.randint(20, size=10)
+A = np.random.randint(20, size=1000)
 seq_A = np.arange(0,10,1)
 
 #sorted_A = bubble_sort(A, 10)
