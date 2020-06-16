@@ -75,10 +75,11 @@ class Transaction(object):
         transaction = utils.sorted_dict_by_key({
             'sender_blockchain_address': self.sender_blockchain_address,
             'recipient_blockchain_address': self.recipient_blockchain_address,
-            'value': self.value
+            'value': float(self.value)
         })
         sha256.update(str(transaction).encode('utf-8'))
         message = sha256.digest()
+        print("test ** ", self.sender_public_key)
         private_key = SigningKey.from_string(
             bytes().fromhex(self.sender_private_key), curve=NIST256p)
         private_key_sign = private_key.sign(message)
