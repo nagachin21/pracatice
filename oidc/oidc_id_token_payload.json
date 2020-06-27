@@ -1,0 +1,14 @@
+{
+    "iss": "https:\/\/auth.login.yahoo.co.jp\/yconnect\/v2",
+    "sub": "ZADXI2MRKDQ2WB5EUY7X3CD5GM",
+    "aud": [
+        "dj00aiZpPVN2cXFQTzNOb3RtdyZzPWNvbnN1bWVyc2VjcmV0Jng9NDE-"
+    ],
+    "exp": 1595597994,
+    "iat": 1593178794,
+    "amr": [
+        "pwd"
+    ],
+    "nonce": "ef3a091928d5491624c0ac54d697124422705092",
+    "at_hash": "to1pN6PFoFAGXvIdqY-NFg"
+}
