@@ -133,7 +133,7 @@ class BlockChain(object):
             bytes().fromhex(sender_public_key), curve=NIST256p
         )  
         verified_key = verifying_key.verify(signature_bytes, message)
-        return verifying_key
+        return verified_key
 
     def valid_proof(self, transactions, previous_hash, nonce,
                     dificulty=MINING_DIFFICULTY):
