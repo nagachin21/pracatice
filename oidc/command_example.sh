@@ -18,6 +18,15 @@ code=SEBZnjPM&\
 redirect_uri=http://example.com/" \
 https://auth.login.yahoo.co.jp/yconnect/v2/token
 
+#basic認証を利用してリクエストする場合 >>
+echo -n "<client_id:client_secret> | base64" #authorization headerへ入れる情報作成
+
+curl -H 'Authorization: Basic ZGowMGFpWnBQVk4yY1hGUVR6Tk9iM1J0ZHlaelBXTnZibk4xYldWeWMyVmpjbVYwSm5nOU5ERS06VHdvZ2F6bGZsYVRuYU40WGtxOTZob2pCMmFjVFpKN3pnaFI3R1ZiQQ==' \
+-d "grant_type=authorization_code&\
+code=suNDO5EF&\
+redirect_uri=http://example.com/" \
+https://auth.login.yahoo.co.jp/yconnect/v2/token
+# <<
 
 
 echo '<ID token header> or <ID token payload>'| base64 --decode
