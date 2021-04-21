@@ -1,15 +1,3 @@
-import re
-s = input()
 
-diff = 1
-while diff > 0:
-    pre = s
-    for char in ["dreamer+$", "dream+$", "eraser+$", "erase+$"]:
-        s = re.sub(char, '', s)
-    diff = len(pre) - len(s)
-
-
-if len(s) == 0:
-    print("YES")
-else:
-    print("NO")
+s = input().replace("eraser", "").replace("erase", "").replace("dreamer", "").replace("dream", "")
+print("YES" if len(s) == 0 else "NO")
